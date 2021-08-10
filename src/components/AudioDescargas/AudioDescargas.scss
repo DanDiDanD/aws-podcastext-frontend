@@ -1,0 +1,34 @@
+.site-page-button {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-download-content{
+
+    padding: 10px 20px 10px 20px;
+
+    &_head{
+        // display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    &_link-download{
+        float: right;
+    }
+
+    &_img-download{
+        // size: 40%;
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.ant-divider-horizontal.modal-divider{
+    margin-top: 5px;
+    margin-right: 0px;
+    margin-bottom: 12px;
+    margin-left: 0px;
+}

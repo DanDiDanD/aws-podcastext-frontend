@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.ant-btn {
+  &-primary {
+    background-color: #0240a3 !important;
+    border-color: #0240a3 !important;
+    font-size: 17px !important;
+    padding: 20px 24px !important;
+    line-height: 0 !important;
+  }
+}
