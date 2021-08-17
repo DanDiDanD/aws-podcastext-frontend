@@ -55,7 +55,7 @@ export default function AudioDescargas(props) {
         <Text>{`${name_file}_s1.wav`}</Text> <Link onClick={() => downloadS3(`${name_download}_s1.wav`)} target="_blank" className="modal-download-content_link-download" >Download</Link> <Divider className="modal-divider"/>
         <Text>{`${name_file}_s2.wav`}</Text> <Link onClick={() => downloadS3(`${name_download}_s2.wav`)} target="_blank" className="modal-download-content_link-download" >Download</Link> <Divider className="modal-divider"/>
         <Text>{`${name_file}_s1.txt`}</Text> <Link onClick={() => downloadS3(`${name_download}_s1.txt`)} target="_blank" className="modal-download-content_link-download" >Download</Link> <Divider className="modal-divider"/>
-        <Text>{`${name_file}_s1.txt`}</Text> <Link onClick={() => downloadS3(`${name_download}_s1.txt`)} target="_blank" className="modal-download-content_link-download" >Download</Link> <Divider className="modal-divider"/>
+        <Text>{`${name_file}_s2.txt`}</Text> <Link onClick={() => downloadS3(`${name_download}_s2.txt`)} target="_blank" className="modal-download-content_link-download" >Download</Link> <Divider className="modal-divider"/>
     </div>
   );
 }

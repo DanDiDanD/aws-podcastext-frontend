@@ -45,10 +45,16 @@ export const Home = () => {
                 allowEnterKey: false
               })
 
-            await uploadFile(file, config)
-            .then(async res => {
+              
+              await uploadFile(file, config)
+              .then(async res => {
                 const respuesta = await subirAudioAWS(name);
                 console.log(respuesta)
+                let name_file = name.substring(1, name.length - 4) ;
+                const transcripcion_s1 = await txtAudioAWS(`${name_file}_s1.wav`)
+                const transcripcion_s2 = await txtAudioAWS(`${name_file}_s2.wav`)
+                console.log(transcripcion_s1)
+                console.log(transcripcion_s2)
                 Swal.close()
                 descargarAudios(name);
                 console.log(res)}
