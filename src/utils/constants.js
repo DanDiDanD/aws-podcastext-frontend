@@ -10,8 +10,9 @@ const {
     NODE_ENV
 } = process.env;
 
-const environment = NODE_ENV;
+console.log(process.env)
 
+const environment = NODE_ENV;
 const BASE_URL = REACT_APP_BACKEND_URL;
 
 const aws_constants = {
