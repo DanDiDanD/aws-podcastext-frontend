@@ -26,7 +26,7 @@ export const PageLayout = (props) => {
             <LoadRoutes routes={routes}/>
           </div>
         </Content>
-        <Footer style={{ textAlign: 'center' }}>Podcastext ©2021 Universidad Nacional Mayor de San Marcos</Footer>
+        <Footer style={{ textAlign: 'center' }}>PodcasText ©2021 Universidad Nacional Mayor de San Marcos</Footer>
       </Layout>
     )
 }

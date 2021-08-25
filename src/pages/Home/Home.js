@@ -10,6 +10,8 @@ import {aws_constants} from '../../utils/constants'
 import { subirAudioAWS, txtAudioAWS } from "../../api/api";
 import Swal from 'sweetalert2'
 
+import './Home.scss'
+
 const {Title, Text} = Typography
 
 const url = localStorage.getItem('URL');
@@ -82,7 +84,10 @@ export const Home = () => {
 
     return (
         <div>
-            <Title>Subir audio </Title>
+            <div className="titulo">
+              <Title className="titulo_principal">PodcastText </Title>
+              <Title level={4} className="titulo_secundario">Sistema de aprendizaje profundo basado en la separación de fuente de audio para la obtención de la trascripción de una conversación aplicado a Podcasts </Title>
+            </div>
             <InputDragDrop subirAudio={subirAudio}/>
             <Info/>
             <Modal
